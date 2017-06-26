@@ -5,16 +5,18 @@
 # git config --global core.excludesfile ~/.gitignore_global
 
 # Ignore bundler config
-/.bundle
+.bundle
 
 # Ignore the build directory
-/build
+build
 
 # Ignore cache
-/.sass-cache
-/.cache
+.sass-cache
+.cache
 
 # Ignore .DS_store file
 .DS_Store
 
-/.c9
+.c9
+.idea
+node_modules

@@ -217,7 +217,7 @@
 - \[Fix\] Fixed vehicle info not fitting in the info box [\#1075](https://github.com/RigsOfRods/rigs-of-rods/pull/1075) ([AnotherFoxGuy](https://github.com/AnotherFoxGuy))
 - \[Fix\] Build on OS X [\#1064](https://github.com/RigsOfRods/rigs-of-rods/pull/1064) ([Hiradur](https://github.com/Hiradur))
 - \[Fix\] Special prop dashboard backward compatibility [\#1062](https://github.com/RigsOfRods/rigs-of-rods/pull/1062) ([mikadou](https://github.com/mikadou))
-- \[Update\] Replaced rigsofrods.com with rigsofrods.org [\#1061](https://github.com/RigsOfRods/rigs-of-rods/pull/1061) ([AnotherFoxGuy](https://github.com/AnotherFoxGuy))
+- \[Update\] Replaced rigsofrods.com with <%= config[:host] %> [\#1061](https://github.com/RigsOfRods/rigs-of-rods/pull/1061) ([AnotherFoxGuy](https://github.com/AnotherFoxGuy))
 - \[Fix\] Build without SocketW [\#1060](https://github.com/RigsOfRods/rigs-of-rods/pull/1060) ([Hiradur](https://github.com/Hiradur))
 - \[Feature\] Added ambient light [\#1059](https://github.com/RigsOfRods/rigs-of-rods/pull/1059) ([AnotherFoxGuy](https://github.com/AnotherFoxGuy))
 - More AngelScript features [\#1056](https://github.com/RigsOfRods/rigs-of-rods/pull/1056) ([AnotherFoxGuy](https://github.com/AnotherFoxGuy))

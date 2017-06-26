@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "foundation-sites": "6.4.3",
+    "motion-ui": "^1.2.3"
+  }
+}

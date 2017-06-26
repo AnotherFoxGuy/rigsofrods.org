@@ -1,16 +1,14 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-  <%= partial "layouts/head.erb"%>
+  <%= partial "layouts/head.erb" %>
 </head>
 
 <body>
-
-  <%= partial "layouts/nav.erb"%>
-    <%= yield %>
-  <%= partial "layouts/footer.erb"%>
-  
+<%= partial "layouts/nav.erb" %>
+<%= yield %>
+<%= partial "layouts/footer.erb" %>
 </body>
 
 </html>
