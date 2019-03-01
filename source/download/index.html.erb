@@ -3,20 +3,20 @@
 ;;;
 
 <script>
-    var useros = navigator.appVersion;
-    var suported_os = ["Win", "Mac", "Linux"];
-    var goto = "//<%= config[:download_host] %>/index.html#NoRedirect";
-    var d = window.location.hash.substring(1);
+  var useros = navigator.appVersion;
+  var suported_os = ["Win", "Mac", "Linux"];
+  var goto = "//<%= config[:download_host] %>/index.html#NoRedirect";
+  var d = window.location.hash.substring(1);
 
-    suported_os.forEach(function (os) {
-        if (useros.indexOf(os) !== -1) {
-            goto = "//<%= config[:download_host] %>/" + os + ".html";
-        }
-    })
-
-    if (d.length === 0 || d !== "NoRedirect") {
-        self.location = goto;
+  suported_os.forEach(function (os) {
+    if (useros.indexOf(os) !== -1) {
+      goto = "//<%= config[:download_host] %>/" + os + ".html";
     }
+  })
+
+  if (d.length === 0 || d !== "NoRedirect") {
+    self.location = goto;
+  }
 </script>
 
 <style>
@@ -26,56 +26,58 @@
     background-attachment: fixed;
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     color: #ee7700;
   }
-
 </style>
 
-
-<div class="row content-div">
+<div class="grid-container content-div">
   <h1 id="download">Download</h1>
 
-  <h3 id="windows">Windows</h3>
-  <ul>
-    <li>
-      Download the latest stable release <a href="//<%= config[:download_host] %>/Win.html">here</a> (recommended)
-    </li>
-    <li>
-      Preview builds for upcoming versions may be found
-      <a href="https://sourceforge.net/projects/rigs-of-rods/files/CI-build/bin/">here</a>
-    </li>
-    <li>
-      If you want to build from source see
-      <a href="https://github.com/RigsOfRods/rigs-of-rods/wiki/Compile-(Windows)">Compiling on Windows</a>
-    </li>
-  </ul>
-
-  <h3 id="linux">Linux</h3>
-  <ul>
-    <li>
-      The easiest way to get the latest version is to build the game using the build scripts.
-      You can download them <a href="//<%= config[:download_host] %>/Linux.html">here</a>
-    </li>
-    <li>
-      Packages for various distributions: <a href="https://forum.rigsofrods.org/thread-68.html">here</a>
-    </li>
-    <li>
-      Build from source, see
-      <a href="https://github.com/RigsOfRods/rigs-of-rods/wiki/Compile-(Linux)">Compiling on Linux</a>
-    </li>
-  </ul>
-
-  <h3 id="os-x">OS X</h3>
-  <p>
-    Unfortunately, due to lack of OS X coders, there is no up to date build of the latest version available.<br>
-    The latest working version for Mac is 0.37-beta. You can download it <a href="//<%= config[:download_host] %>/Mac.html">here</a>
-  </p>
-  <ul>
-    <li> If you want to build from
-      source see <a href="https://github.com/RigsOfRods/rigs-of-rods/wiki/Compile-(OS-X)">Compiling on OS X</a>
-    </li>
-  </ul>
+  <table style="margin-top: 2em">
+    <thead>
+      <tr>
+        <th class="center ror-color">
+          <h2>Step 1</h2>
+        </th>
+        <th class="center ror-color">
+          <h2>Step 2</h2>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="center">
+          Download an install the
+          <span data-tooltip="data-tooltip" aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex="1" title="itch.io is a simple way to find and share indie games online for free.">
+            itch.io desktop app
+          </span>
+          <br>
+          <br>
+          <a href="https://itch.io/app" class="show-for-medium large button">
+            Download the itch.io desktop app
+          </a>
+          <a href="https://itch.io/app" class="show-for-small-only expanded button">
+            Download the itch.io desktop app
+          </a>
+        </td>
+        <td class="center">
+          Click the button below to install RoR using the itch.io desktop app
+          <br>
+          <br>
+          <a href="itchio://install/351397" class="show-for-medium large button">
+            Install RoR
+          </a>
+          <a href="itchio://install/351397" class="show-for-small-only expanded button">
+            Install RoR
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 
   <h2 id="overview-readme-faq">Overview / Readme / FAQ</h2>
   <p>
@@ -85,9 +87,7 @@
 
   <h2 id="license">License</h2>
   <p>
-    Rigs of Rods is free and open source software under the GPL v3 license, meaning it is both free as in speech (you
-    can
-    modify it) and free as in beer (it does not cost you anything).
+    Rigs of Rods is free and open source software under the GPL v3 license, meaning it is both free as in speech (you can modify it) and free as in beer (it does not cost you anything).
   </p>
 
   <h2 id="legacy">Legacy</h2>

@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-$global-color: #ee7700;
+$global-color: #226699;
 $topbar-background: $global-color !important;
 
 $foundation-palette: (
-        primary: #ee7700,
+        primary: #226699,
         secondary: #777,
         success: #3adb76,
         warning: #ffae00,
@@ -13,7 +13,6 @@ $foundation-palette: (
 
 @import '../../node_modules/foundation-sites/scss/foundation';
 @import '../../node_modules/motion-ui/src/motion-ui';
-@import '../../node_modules/font-awesome/scss/font-awesome';
 
 //header
 .top-bar, .main-menu-mobile-text {
@@ -41,6 +40,13 @@ $foundation-palette: (
   padding: 2em;
   height: 100%;
   width: 75rem;
+}
+
+#main-menu{
+  background-color: black;
+}
+#main-menu div{
+  padding: 5px;
 }
 
 .content-div a {
@@ -117,7 +123,7 @@ $foundation-palette: (
 // Footer
 
 footer {
-  background: #ca6100;
+  background: #226699;
   font-family: sans-serif;
   font-size: 15px;
   color: rgba(255, 255, 255, 0.8);
@@ -180,8 +186,7 @@ ul.none {
   list-style-type: none;
 }
 
-@include motion-ui-animations;
+
+@include foundation-everything();
 @include motion-ui-transitions;
-@include foundation-everything;
-@include foundation-xy-grid-classes;
-@include foundation-grid;
+@include motion-ui-animations;

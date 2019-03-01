@@ -15,7 +15,7 @@
     "name": "Repository",
     "id": "nav.repository.title",
     "icon": "fa fa-plus",
-    "url": "//forum.rigsofrods.org/downloads.php"
+    "url": "//forum.rigsofrods.org/resources/"
   },
   {
     "name": "Forum",
@@ -26,7 +26,7 @@
   {
     "name": "Docs",
     "id": "nav.docs.title",
-    "icon": "fa fa-lightbulb-o",
+    "icon": "fa fa-lightbulb",
     "url": "http://docs.rigsofrods.org"
   },
   {

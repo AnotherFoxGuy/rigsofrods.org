@@ -1,79 +1,73 @@
 <% current_page.data.title = "Download Rigs of Rods V0.4.7.0 for Windows" %>
 
-<style>
-  body {
-    background: url(//<%= config[:host] %>/images/screenshots/ror-screenshot4_blur.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
-    display: flex;
-    flex-flow: column;
-    height: 100%
-  }
+  <style>
+    body {
+      background: url("//<%= config[:host] %>/images/screenshots/ror-screenshot4_blur.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      overflow: hidden;
+      display: flex;
+      flex-flow: column;
+      height: 100%;
+    }
 
-  html, body {
-    height: 100%;
-    margin: 0
-  }
-</style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+  </style>
 
-<div class="row content-div">
-  <div style="padding:3em; text-align: center;">
-    <h2>Latest release: V0.4.8.0 for Windows</h2>
-    <hr>
+  <div class="grid-container content-div">
+    <div style="padding:3em; text-align: center;">
+      <h2>Latest release: V0.4.8.0 for Windows</h2>
+      <hr>
 
-    <!-- Soon...
-    <table style="margin-top: 2em">
-      <thead>
-      <tr>
-        <th class="center ror-color"><h2>Step 1</h2></th>
-        <th class="center ror-color"><h2>Step 2</h2></th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>
-          Download an install the
-          <span data-tooltip aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex=1
-                title="itch.io is a simple way to find and share indie games online for free.">
-          itch.io desktop app
-        </span>
-          <br>
-          <br>
-          <a href="https://itch.io/app" class="show-for-medium large button">
-            <span class="fa fa-download"/>
-            Download the itch.io desktop app
-          </a>
-          <a href="https://itch.io/app" class="show-for-small-only expanded button">
-            <span class="fa fa-download"/>
-            Download the itch.io desktop app
-          </a>
-        </td>
-        <td>
-          Click the button below to install RoR using the itch.io desktop app
-          <br>
-          <br>
-          <a href="itchio://install/210215" class="show-for-medium large button">
-            <span class="fa fa-download"/>
-            Install RoR
-          </a>
-          <a href="itchio://install/210215" class="show-for-small-only expanded button">
-            <span class="fa fa-download"/>
-            Install RoR
-          </a>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-  -->
+      <table style="margin-top: 2em">
+        <thead>
+          <tr>
+            <th class="center ror-color">
+              <h2>Step 1</h2>
+            </th>
+            <th class="center ror-color">
+              <h2>Step 2</h2>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="center">
+              Download an install the
+              <span data-tooltip="data-tooltip" aria-haspopup="true" class="has-tip" data-disable-hover='false' tabindex="1" title="itch.io is a simple way to find and share indie games online for free.">
+                itch.io desktop app
+              </span>
+              <br>
+              <br>
+              <a href="https://itch.io/app" class="show-for-medium large button">
+                Download the itch.io desktop app
+              </a>
+              <a href="https://itch.io/app" class="show-for-small-only expanded button">
+                Download the itch.io desktop app
+              </a>
+            </td>
+            <td class="center">
+              Click the button below to install RoR using the itch.io desktop app
+              <br>
+              <br>
+              <a href="itchio://install/351397" class="show-for-medium large button">
+                Install RoR
+              </a>
+              <a href="itchio://install/351397" class="show-for-small-only expanded button">
+                Install RoR
+              </a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
 
+      <small class="small-centered">Not the correct version or wrong OS?
+        <a href="//<%= config[:download_host] %>/index.html#NoRedirect">See all versions</a>
+      </small>
 
-  <p>
-  <a href="https://sourceforge.net/projects/rigs-of-rods/files/latest/download"><img alt="Download Rigs of Rods 0.4+" src="https://a.fsdn.com/con/app/sf-download-button" width=276 height=48 srcset="https://a.fsdn.com/con/app/sf-download-button?button_size=2x 2x"></a>
-  </p>
-    <small class="small-centered">Not the correct version or wrong OS?
-      <a href="//<%= config[:download_host] %>/index.html#NoRedirect">See all versions</a>
-    </small>
-
+    </div>
   </div>
-</div>

@@ -11,8 +11,3 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 # Middleman Gems
 gem 'middleman'
 gem 'middleman-livereload'
-
-gem "middleman-minify-html"
-gem "middleman-imageoptim", :git => "https://github.com/plasticine/middleman-imageoptim", :branch => "master"
-
-gem "nokogiri"

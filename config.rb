@@ -23,10 +23,15 @@ activate :livereload
 
 # redirect "/repository/index.html", :to => "http://forum.rigsofrods.org/thread-235.html"
 
+
+activate :external_pipeline,
+  name: :webpack,
+  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
+  source: "webpack",
+  latency: 1
+
+
 # Build-specific configuration
 configure :build do
   activate :minify_css
-  activate :minify_javascript
-  activate :minify_html
-  activate :imageoptim
 end
