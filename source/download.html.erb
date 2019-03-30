@@ -2,26 +2,9 @@
 "title": "Download Rigs of Rods"
 ;;;
 
-<script>
-  var useros = navigator.appVersion;
-  var suported_os = ["Win", "Mac", "Linux"];
-  var goto = "//<%= config[:download_host] %>/index.html#NoRedirect";
-  var d = window.location.hash.substring(1);
-
-  suported_os.forEach(function (os) {
-    if (useros.indexOf(os) !== -1) {
-      goto = "//<%= config[:download_host] %>/" + os + ".html";
-    }
-  })
-
-  if (d.length === 0 || d !== "NoRedirect") {
-    self.location = goto;
-  }
-</script>
-
 <style>
   body {
-    background: url("//<%= config[:host] %>/images/screenshots/ror-screenshot4_blur.jpg");
+    background: url("//<%= config[:CDN] %>/images/screenshots/ror-screenshot4_blur.jpg");
     background-size: cover;
     background-attachment: fixed;
   }
@@ -82,7 +65,7 @@
   <h2 id="overview-readme-faq">Overview / Readme / FAQ</h2>
   <p>
     Many questions are answered in the documentation, have a look around:
-    <a href="http://docs.rigsofrods.org/">Documentation index</a>
+    <a href="http://rigsofrods.cf/">Documentation index</a>
   </p>
 
   <h2 id="license">License</h2>

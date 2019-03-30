@@ -14,10 +14,25 @@ import {
 import {
     faReddit,
     faDiscord,
-    faGithub
+    faGithub,
+    faSteam,
+    faFacebook,
+    faTwitter
 } from "@fortawesome/free-brands-svg-icons";
 
-library.add(faHome, faDownload, faTerminal, faComments, faReddit, faDiscord, faGithub, faPlus, faLightbulb, faTruck);
+library.add(faHome,
+            faDownload,
+            faTerminal,
+            faComments,
+            faReddit,
+            faDiscord,
+            faGithub,
+            faPlus,
+            faLightbulb,
+            faTruck,
+            faSteam,
+            faFacebook,
+            faTwitter);
 dom.watch();
 
 import foundation from 'foundation-sites'

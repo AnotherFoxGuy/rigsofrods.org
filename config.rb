@@ -4,12 +4,12 @@
 
 configure :development do
   config[:host] = "localhost:4567"
-  config[:download_host] = "localhost:4567/download"
+  config[:CDN] = "localhost:4567"
 end
 
 configure :build do
   config[:host] = "rigs-of-rods.sourceforge.io"
-  config[:download_host] = "rigs-of-rods.sourceforge.io/download"
+  config[:CDN] = "cdn.staticaly.com/img/rigs-of-rods.sourceforge.io"
 end
 
 # Per-page layout changes:
@@ -20,9 +20,7 @@ page '/*.json', layout: false
 page '/*.txt', layout: false
 
 activate :livereload
-
-# redirect "/repository/index.html", :to => "http://forum.rigsofrods.org/thread-235.html"
-
+activate :directory_indexes
 
 activate :external_pipeline,
   name: :webpack,
@@ -33,5 +31,6 @@ activate :external_pipeline,
 
 # Build-specific configuration
 configure :build do
+  activate :minify_html
   activate :minify_css
 end
