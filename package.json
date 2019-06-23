@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "webpack --bail",
+    "develop": "webpack --watch -d"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.9.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.19",

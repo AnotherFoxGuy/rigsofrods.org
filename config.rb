@@ -23,10 +23,10 @@ activate :livereload
 activate :directory_indexes
 
 activate :external_pipeline,
-  name: :webpack,
-  command: build? ? './node_modules/webpack/bin/webpack.js --bail' : './node_modules/webpack/bin/webpack.js --watch -d',
-  source: "webpack",
-  latency: 1
+         name: :webpack,
+         command: build? ? 'npm run build' : 'npm run develop',
+         source: "webpack",
+         latency: 1
 
 
 # Build-specific configuration
