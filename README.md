@@ -1,5 +1,5 @@
 # Rigs of Rods website
-[![Build Status](https://travis-ci.org/RigsOfRods/<%= config[:host] %>.svg?branch=master)](https://travis-ci.org/RigsOfRods/<%= config[:host] %>)
+[![Build Status](https://travis-ci.org/RigsOfRods/rigsofrods.org.svg?branch=master)](https://travis-ci.org/RigsOfRods/rigsofrods.org)
 
 This is the source code for Rigs of Rods website. It is 100% static, fast and secure but uses a myriad of web tech to compile and run as intended.
 
