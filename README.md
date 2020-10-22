@@ -7,7 +7,7 @@ This is the source code for Rigs of Rods website. It is 100% static, fast and se
 Here is the list and description of all technologies used to build and run the website.
 
 ### Dependency management
-* _[yarn](https://yarnpkg.com/)_: Used for the installation of the Foundation framework
+* _[libman](https://docs.microsoft.com/en-us/aspnet/core/client-side/libman/)_: Used for the installation of the Foundation framework
 
 ### Design
 * _[Foundation](http://foundation.zurb.com/)_: loud shout out to the folks behind this framework that made rapid creation of nice looking websites possible.
@@ -15,17 +15,16 @@ Here is the list and description of all technologies used to build and run the w
 ### Coding
 The cogs of the website.
 
-* _[Ruby](https://ruby-lang.org/)_: compile-time logic for site generator.
+* _[C#/Razor](https://dotnet.microsoft.com/)_: compile-time logic for site generator.
 * _JavaScript_: client-side runtime code.
 
 ### Baking
-* Website baked with [Middleman](https://middlemanapp.com).
-
+* Website baked with [Statiq](https://statiq.dev/).
 
 ## Commands
-* `yarn` - install the dependencies
-* `middleman server` - Start a test server: examine the website at localhost:4567.
-* `middleman build` - Build the website locally.
+* `libman restore & dotnet restore` - install the dependencies
+* `dotnet run -c Release -- preview` - Start a test server: examine the website at localhost:5080.
+* `dotnet run -c Release` - Build the website locally.
 
 ## License
 

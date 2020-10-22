@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "defaultProvider": "jsdelivr",
+  "libraries": [
+    {
+      "library": "jquery@3.2.1",
+      "destination": "wwwroot/scripts/jquery",
+      "files": [
+        "dist/jquery.min.js"
+      ]
+    },
+    {
+      "library": "foundation-sites@6.6.3",
+      "destination": "input/stylesheets/foundation",
+      "files": [
+        "scss/**/*.scss",
+        "_vendor/**/*"
+      ]
+    },
+    {
+      "library": "motion-ui@2.0.3",
+      "destination": "input/stylesheets/motion-ui",
+      "files": [
+        "src/**/*.scss"
+      ]
+    }
+  ]
+}

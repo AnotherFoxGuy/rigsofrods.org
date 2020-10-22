@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Home",
+    "id": "nav.home.title",
+    "icon": "fa fa-home",
+    "url": "/"
+  },
+  {
+    "name": "Download",
+    "id": "nav.download.title",
+    "icon": "fa fa-download",
+    "url": "/download"
+  },
+  {
+    "name": "Repository",
+    "id": "nav.repository.title",
+    "icon": "fa fa-plus",
+    "url": "https://forum.rigsofrods.org/resources/"
+  },
+  {
+    "name": "Forum",
+    "id": "nav.forum.title",
+    "icon": "fa fa-comments",
+    "url": "https://forum.rigsofrods.org"
+  },
+  {
+    "name": "Docs",
+    "id": "nav.docs.title",
+    "icon": "fa fa-lightbulb",
+    "url": "https://docs.rigsofrods.org"
+  },
+  {
+    "name": "Source Code",
+    "id": "nav.docs.title",
+    "icon": "fa fa fa-terminal",
+    "url": "https://github.com/RigsOfRods/rigs-of-rods"
+  }
+]
